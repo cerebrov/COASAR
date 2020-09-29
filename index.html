@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>refugee-circulation</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+<h2 id='title'>WORLD REFUGEE MAP</h2>
+<div id='description'>Mülteci Dünya Haritası :D. Source: <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>USDA Economic Research Service</a></div>
+<div id='tooltip'></div>
+<svg id="canvas"></svg>
+<svg id='legend'>
+    <svg id='legend'>
+        <g>
+            <rect x="10" y="0" width="40" height="40" fill="tomato"></rect>
+            <text x="60" y="20" fill="black">1 MİLYONDAN AZ</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="40" height="40" fill="orange"></rect>
+            <text x="60" y="60" fill="black">1 MİLYON 3 MİLYON ARASI</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="40" height="40" fill="lightgreen"></rect>
+            <text x="60" y="100" fill="black">1 MİLYON 5 MİLYON ARASI</text>
+        </g>
+        <g>
+            <rect x="10" y="120" width="40" height="40" fill="limegreen"></rect>
+            <text x="60" y="140" fill="black">5 MİLYON ÜSTÜ</text>
+        </g>
+    </svg>
+    
+</svg>
+<!--NEW-->
+<div>
+    <p> REFUGEE API KULLANIMI </p>
+    <table id="table">
+        <colgroup>
+            <col class="twenty" />
+            <col class="fourty" />
+            <col class="thirtyfive" />
+        </colgroup>
+        <tr>
+            <th><span class="sort0"></span>KOD</th>
+            <th><span class="sort1"></span>KONUM</th>
+            <th><span class="sort2"></span>ULKE</th>
+        </tr>
+    </table>
+</div>
+<script>
+    document.addEventListener( "DOMContentLoaded", get_json_data, false ); 
+    function get_json_data(){
+        var json_url = 'https://api.unhcr.org/rsq/v1/asylums';
+
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() { 
+            if (this.readyState == 4 && this.status == 200) {
+
+                var data = JSON.parse(this.responseText); 
+                console.log(data);
+                append_json(data);
+            }
+        }
+        xmlhttp.open("GET", json_url, true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send(); 
+    }
+
+    function append_json(data){
+        var table = document.getElementById('table');
+        data.forEach(function(object) {
+            var tr = document.createElement('tr');
+            tr.innerHTML = '<td>' + object.code + '</td>' +
+            '<td>' + object.region + '</td>' +
+            '<td>' + object.country_name + '</td>';
+            table.appendChild(tr);
+        });
+    }
+</script>
+<!--NEW-->
+
+</body>
+<script defer src="script.js"></script>
+<scriptdefer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></scriptdefer></script>
+</html>
