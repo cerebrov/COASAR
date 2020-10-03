@@ -17,32 +17,30 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
 
-
-#dis_bolme { 
-
-width: 100%; 
-height:100%;
-background-color: #666;
-margin-left: 8rem;
-
+* {
+  box-sizing: border-box;
 }
 
-.ic_bolme{
-
-    float:left;
-    width: 20%;
-    height:400px;
-    border:rgb(88, 82, 82) solid 1px;
-    background-color: #616161;
-    margin: px;
-    padding: 3px;
-
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
 }
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 .address1 li a {
     color: #fff;
     text-decoration: none;
 }
+
+
 ul.address1 i {
     width: 20px;
     position: absolute;
@@ -57,34 +55,87 @@ ul.address1 i.fa-envelope {
     top: 4px;
 }
 
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-  <div style="color:white; margin-left: 30rem;" class="w3-container w3-grey">
+  <div style=" text-align: center;" class="w3-container w3-grey">
     <h1 style="text-transform: uppercase;">refugee analyze   (Planet With People challenge )</h1>
   </div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>REFUGE<br>ANALYZE</b></h3>
+
+
+<!-- Top menu on small screens -->
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="javascript:void(0)" onclick="()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#" onclick="cerebrov()" class="w3-bar-item w3-button">REFUGEE MAP</a> 
   <a href="#methodology" onclick="cerebrov()" class="w3-bar-item w3-button">METHODOLOGY</a>
   <a href="#aboutCerebrov" onclick="cerebrov()" class="w3-bar-item w3-button">ABOUT CEREBROV</a> 
   <a href="#meetTheTeam" onclick="cerebrov()" class="w3-bar-item w3-button">MEET THE TEAM</a>
   <a href="#contact" onclick="cerebrov()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+</div>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">REFUGE ANALYZE </span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+<div id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
 </header>
 
   <div class="w4-row">
-    <div class="w4-third">
+    <div class="w4-third" id="refugeeMap">
      
-      <img src="resource.jpg" style="width:80% ; margin-left: 300px; margin-bottom: 0px;" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+      <img src="resource.jpg" style="width:100% ;" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
     </div>
 
   <!-- Modal for full size images on click-->
@@ -123,46 +174,31 @@ ul.address1 i.fa-envelope {
 </div>
 
        <!-- meet the team section -->
-      <h4 style="text-align: center;"><b>MEET THE TEAM</b></h4><br>
-      <div class="w3-content w3-justify" id="meetTheTeam">
-        <div class="w3-container"></div>
-        <div id="dis_bolme">
-
-
-<div class="ic_bolme"><img src="myPhoto.jpg" alt=""><br><br>
-<p> <span>Ali Hizmetçi</span> </p>
-</div>
-
-<div class="ic_bolme">
-<img src="arifgunduz.jpeg" alt=""><br><br>
-<p> <span>Arif Gündüz</span> </p>
-</div>
-
-<div class="ic_bolme">
-<img src="eneskarpuz.jpeg" alt=""><br><br>
-<p> <span>Enes Karpuz</span> </p>
-</div>
-
-<div class="ic_bolme">
-<img src="aliguzel.jpg" alt=""><br><br>
-<p> <span>Ali Güzel</span> </p>
-</div>
-
-<div class="ic_bolme">
-<img src="mahirkursun.jpeg" alt=""><br><br>
-<p> <span>Mahir Kurşun</span> </p>
-</div>
-
-
-</div>
+      
+       <div class="row">
+        <div style="width: 20%;" class="column">
+          <img src="myPhoto.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div style="width: 20%;" class="column">
+          <img src="arifgunduz.jpeg" alt="Forest" style="width:100%">
+        </div>
+        <div style="width: 20%;" class="column">
+          <img  src="eneskarpuz.jpeg" alt="Mountains" style="width:100%">
+        </div>
+        <div style="width: 20%;" class="column">
+          <img  src="mahirkursun.jpeg" alt="Mountains" style="width:100%">
+        </div>
+        <div style="width: 20%;" class="column">
+          <img src="aliguzel.jpg" alt="Mountains" style="width:100%">
+        </div>
        
-        
       </div>
-    </div>
+      
+     
   
    <!-- Contact section -->
    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <h4><b>CONTACT</b></h4>  
+    <h4 style="text-align: center;"><b>CONTACT</b></h4>  
     <div class="w3-content" style="max-width:600px">
       
       <p>Do you want to know the details ?  fill out the form and contact us !</p>
@@ -188,12 +224,8 @@ ul.address1 i.fa-envelope {
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <p>
-      </div>
-    
-      <div style="margin-left: -10rem;" class="col-md-4">
+  
+      <div style="margin-left: 15%;" class="col-md-4">
                         <h4>Information</h4>
                         <ul class="address1">
                             <li><i class="fa fa-map-marker"></i>Ankara/Turkey</li>
@@ -218,6 +250,20 @@ ul.address1 i.fa-envelope {
 
 <script>
 // Script to open and close sidebar
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
+
+
+
+
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
