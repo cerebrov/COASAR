@@ -1,8 +1,6 @@
 # Refugee-Analyze
 ![](https://raw.githubusercontent.com/cerebrov/refugee-analyze/master/gif/ezgif.com-video-to-gif.gif)
 
-#### Cerebro Team SpaceAppsChallenge Project
-#### Planet with People
 # Contributors 
 ![@eneskarpuz](https://github.com/eneskarpuz)
 # Technical Solution Details
