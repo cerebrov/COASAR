@@ -8,6 +8,9 @@
 
 ![@eneskarpuz](https://github.com/eneskarpuz)
 ![@ali1903](https://github.com/ali1903)
+![@Aliguzel96](https://github.com/Aliguzel96)
+![@mahirkrsn](https://github.com/mahirkrsn)
+![@arif05-98](https://github.com/arif05-98)
 
 # Technical Solution Details
 ### http://cerebro.orgfree.com/
