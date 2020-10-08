@@ -19,5 +19,5 @@ Refugee capacity, circulation and asylum are the 3 core issues of the cerebro te
 ### Links
 #### [Refugee API](https://app.sheetlabs.com/#/services/doc/CERE/REFAPI#examples)
 
-#The Method
+# The Method
 Cerebro provides information on refugees using various data. While presenting this information, various display methods were used by classifying data according to their types. 
