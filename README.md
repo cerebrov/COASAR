@@ -1,6 +1,5 @@
 # Refugee-Analyze
 
-**team CEREBRO**
 <br><br>
 ![teamCerebro](https://user-images.githubusercontent.com/56802853/96052506-6520ff80-0e86-11eb-9fac-4b1339742ca6.PNG)
 
