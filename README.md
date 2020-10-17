@@ -1,4 +1,5 @@
 # Refugee-Analyze
+Cerebro provides information on refugees using various data. While presenting this information, various display methods were used by classifying data according to their types. 
 ### http://cerebro.orgfree.com/
 ![](https://raw.githubusercontent.com/cerebrov/refugee-analyze/master/gif/ezgif.com-video-to-gif.gif)
 --------------
