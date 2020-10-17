@@ -1,12 +1,10 @@
 # Refugee-Analyze
-
-![teamCerebro](https://user-images.githubusercontent.com/56802853/96052506-6520ff80-0e86-11eb-9fac-4b1339742ca6.PNG)
-
-
 ### http://cerebro.orgfree.com/
 ![](https://raw.githubusercontent.com/cerebrov/refugee-analyze/master/gif/ezgif.com-video-to-gif.gif)
 --------------
 ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
+![teamCerebro](https://user-images.githubusercontent.com/56802853/96052506-6520ff80-0e86-11eb-9fac-4b1339742ca6.PNG)
 
 # Contributors 
 
