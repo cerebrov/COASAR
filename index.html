@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Refuge Analyze (Mülteci Analizi)</title>
+<title>Refugee Analyze</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
@@ -139,7 +139,7 @@
     })
       .done(function (data) {
         if (data.length == 0) {
-          console.log("No results found");
+          console.log("Sonuç bulunamadı");
           return;
         }
         var i;
@@ -186,22 +186,24 @@
       <span style="font-size:25px;cursor:pointer;background-color:#000;color: 
       white;padding: 20px; border-radius: 5%; border-width: 1px;" onclick="openNav()">&#9776;</span>
     </div>
-    <h2 style="font-size:25px;cursor:pointer;font-weight: bolder;">| Refugee Analyze</h2>
+    <h2 style="font-size:25px;cursor:pointer;font-weight: bolder;"> Refugee Analyze</h2>
 
   </div>
   <h4
     style="background-color:#000;text-align: center; margin-top: 0;font-size: 12px; padding:10px;color: white;font-weight: bold;">
-    <span style='font-size:15px;'>&#9971; </span> To see refugee data,hover over countries with cursor or click
-    countries in map<span style='font-size:15px;'> &#9971;</span></h4>
+    <span style='font-size:15px;'>&#9971; </span> Hover over countries or click on the map to see refugee data<span style='font-size:15px;'> &#9971;</span></h4>
 
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="javascript:void(0)" onclick="eeloth()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-    <a href="#" onclick="eeloth()" class="w3-bar-item w3-button">REFUGEE MAP</a>
-    <a href="#dashboard" onclick="eeloth()" class="w3-bar-item w3-button">DASHBOARD</a>
-    <a href="#methodology" onclick="eeloth()" class="w3-bar-item w3-button">METHODOLOGY</a>
-    <a href="#contact" onclick="eeloth()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="javascript:void(0)" onclick="cerebrov()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="#" onclick="cerebrov()" class="w3-bar-item w3-button">REFUGEE MAP</a>
+    <a href="#methodology" onclick="cerebrov()" class="w3-bar-item w3-button">METHODOLOGY</a>
+    <a href="#dashboard" onclick="cerebrov()" class="w3-bar-item w3-button">DASHBOARD</a>
+    <a href="#TrData" onclick="cerebrov()" class="w3-bar-item w3-button">TURKEY-ANALYZE</a>
+    <a href="#AboutCerebrov" onclick="cerebrov()" class="w3-bar-item w3-button">ABOUT-CEREBROV</a>
+    <a href="#MeetTheTeam" onclick="cerebrov()" class="w3-bar-item w3-button">MEET-THE-TEAM</a>
+    <a href="#contact" onclick="cerebrov()" class="w3-bar-item w3-button">CONTACT</a>MeetTheTeam
   </div>
   </header>
   <div class="w4-row">
@@ -1968,77 +1970,214 @@
         <img id="img01" class="w3-image">
         <p id="caption"></p>
       </div>
-    </div>
+    </div><br>
 
-    <!-- DASHBOARD -->
-    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="dashboard">
-      <div class="w3-content w3-justify" style="max-width:770px">
-        <h4 class="w3-center"><b>TOP 5</b></h4>
+    
+    <!-- METHODOLOGY -->
 
-        
-          <div class="ui-widget">
-              <div class="ui-value">Turkey</div>
-              <span class="ui-label">turkiye</span>
-          </div>
-          
-          <div class="ui-widget">
-              <div class="ui-value">Pakistan</div>
-              <span class="ui-label">pakistan</span>
-          </div>
-          <div class="ui-widget">
-            <div class="ui-value">Germany</div>
-            <span class="ui-label">almanya</span>
-        </div>
-
-        <div class="ui-widget">
-          <div class="ui-value">Iranian</div>
-          <span class="ui-label">iran</span>
-      </div>
-
-        
-          <div class="ui-widget">
-              <div class="ui-value">Lebanon</div>        
-              <ul>
-                <li>
-                  lübnan
-                </li>
-                <li>
-                  lübnan
-                </li>
-                <li>
-                  lübnan
-                </li>
-              </ul>      
-          </div>        
-      </div>
-    </div>
-
-    <!-- METODOLOJİ -->
-
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="methodology">
+    <div class="w3-container w3-grey w3-padding-32 w3-padding-large" id="methodology">
       <div class="w3-content" style="max-width:600px">
-        <h4 class="w3-center"><b>METODOLOJİ (METHODOLOGY)</b></h4>
+        <h4 class="w3-center"><b>METHODOLOGY</b></h4><br>
         <p>
           Refugee capacity, mobility and asylum are the 3 main subjects of this project. We created an existing refugee
           map to analyze statistical data such as the current refugee capacity of countries, regular and irregular
           migration of refugees, and the distribution of these migrations by population. We analyzed data using The Un
-          Refugee Agency (UNHRC) data. </p><br>
+          Refugee Agency (UNHRC) data. </p><br><br>
       </div>
     </div>
 
+    
+
+    <!-- DASHBOARD -->
+    <div class="w3-container w3-blue-gray w3-center w3-text-light-grey w3-padding-32" id="dashboard">
+      <div class="w3-content w3-justify" style="max-width:770px">
+        <h4 class="w3-center"><b>TOP 5</b></h4>
+
+        
+    
+        <div class="ui-widget">
+           
+          <div class="ui-value">Turkey</div>
+          <span class="ui-label">Turkey</span>
+
+        </div>
+           
+          
+          <div class="ui-widget">
+              <div class="ui-value">Pakistan</div>
+              <span class="ui-label">Pakistan</span>
+              
+          </div>
+
+
+          <div class="ui-widget">
+            <div class="ui-value">Lebanon</div>    
+            <span class="ui-label">Lebanon</span>
+
+            </div>      
+
+
+     
+
+          <div class="ui-widget">
+            <div class="ui-value">Germany</div>
+            <span class="ui-label">Germany</span>
+        </div>
+
+        <div class="ui-widget">
+          <div class="ui-value">Iranian</div>
+          <span class="ui-label">Iranian</span>
+
+    
+      </div>
+
+        
+          
+      </div>
+    </div>
+
+
+        <!-- Dashhh -->
+        <div class="w3-container w3-blue-gray w3-center w3-text-light-grey w3-padding-32" id="dashboard">
+          <div class="w3-content w3-justify" style="max-width:770px; margin-top :-40px">
+
+            <div style="display: inline-block; margin-right:8px;" class="list-group">
+              <a href="#" class="list-group-item list-group-item-danger">Syrian=3.579.332</a>
+              <a href="#" class="list-group-item list-group-item-warning">Afghan=71.645</a>
+              <a href="#" class="list-group-item list-group-item-disabled  ">Other=100.479</a>
+            </div>
+            
+            <div style="display: inline-block;margin-right:8px" class="list-group">
+              <a href="#" class="list-group-item list-group-item-danger"> Afghan = 1.351.645</a>
+              <a href="#" class="list-group-item list-group-item-warning">Indian =41.530 </a>
+              <a href="#" class="list-group-item list-group-item-disabled ">Other=26.421</a>
+            </div>
+
+            <div style="display: inline-block; margin-right:8px" class="list-group">
+              <a href="#" class="list-group-item list-group-item-danger"> Syrian = 914.600</a>
+              <a href="#" class="list-group-item list-group-item-warning">Yemeni =116.300 </a>
+              <a href="#" class="list-group-item list-group-item-disabled ">Other=361.274</a>
+            </div>
+
+            
+            <div style="display: inline-block;margin-right:10px" class="list-group">
+              <a href="#" class="list-group-item list-group-item-danger"> Turk = 411.611</a>
+              <a href="#" class="list-group-item list-group-item-warning">Syrian =110.343 </a>
+              <a href="#" class="list-group-item list-group-item-disabled ">Other=624.728</a>
+            </div>
+            
+            <div style="display: inline-block;" class="list-group">
+              <a href="#" class="list-group-item list-group-item-danger"> Afghan = 930.000</a>
+              <a href="#" class="list-group-item list-group-item-warning">Iraqi = 34.500</a>
+              <a href="#" class="list-group-item list-group-item-disabled ">Other=12.210</a>
+                            
+            </div>
+            
+            
+           
+        </div><br>
+    </div>
+
+
+
+        <!-- Tr Veri analizi-->
+<div class="w3-container w3-grey w3-padding-32 w3-padding-large" id="TrData">
+
+  
+<div class="container">
+  <h2 style=" margin-left: 35%; margin-bottom: 3rem ;">ANALYSIS OF REFUGEES IN TURKEY</h2>
+  <p> foreign close to 5 million by the end of 2020, according to official sources welcomes turkey.
+    Some folks who come as refugees from other countries, refugees in Turkey is class.
+    They were not included because they did not participate in this project.
+   <p>Uighurs from East Turkistan to Turkey from the Turkish nation from the Asylum requests
+    Afghans have fled the regime took refuge in Turkey.</p>
+    According to the number of years the number of Syrian refugees in Turkey over 3 million and, according to the city
+     population is listed below.  </p><br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="GocIdaresi.jpg" target="_blank">
+          <img src="GocIdaresi.jpg" alt="Migration Management Syrian Refugees" style="width:100%">
+          <div class="caption">
+            <p>Located number of Syrian refugees in Turkey by year.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="TrMülteciSehirRaporu.jpg" target="_blank">
+          <img src="TrMülteciSehirRaporu.jpg" alt="İllere göre suriyeli mülteciler" style="width:100%">
+          <div class="caption">
+            <p>Cities hosting the most Syrian refugees.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+ <!-- About Cerebrov section -->
+
+ <div class="w3-container w3-blue-gray w3-padding-32 w3-padding-large" id="AboutCerebrov">
+  <div class="w3-content" style="max-width:600px">
+    <h4 class="w3-center"><b>ABOUT CEREBROV</b></h4>
+    <p>
+      While the task and project management processes in the team were provided by Enes Karpuz, he took up the tasks of creating the world refugee map and its integration into the web page.\n Web page prepared by Ali Hizmetci. At this stage, methodology tab was created based on nasa spaceapps challenge and technical information about the project was presented. Then the about Cerebro tab, which contains details about the group, and the contact tab for those who want to get information about the project details.The subject and content of the project was determined by Ali Guzel. At this point, the refugee issue, which is a global problem, has been discussed and its effects on the population have been considered. While carrying out the project, various documentation was prepared in detail and the personal goal was achieved.Arif Gunduz prepared a presentation while dealing with the necessary infrastructure for API.
+    </p><br>
+  </div>
+</div>
+
+       <!-- meet the team section -->
+ 
+      
+      
+       <div class="w3-container w3-grey w3-padding-32 w3-padding-large" id="MeetTheTeam">
+         <div style="margin: auto;" class="container">
+         <h4 style="text-align: center;"><b>OUR TEAM</b></h4>          
+        <div style=" width: 22%;" class="column">
+          <img src="https://avatars3.githubusercontent.com/u/56802853?s=460&u=e1d885f2ccb30d7e2c3396932aa51d3b5e87fbc0&v=4" alt="Snow" style="width:100%">
+          <h4> Ali Altinok </h2>     
+        </div>
+        <div style="width: 22%;" class="column">
+          <img src="https://avatars3.githubusercontent.com/u/57840150?s=460&u=0f2d994ac5e5dd60ae6d0c7a373e2b2848e84107&v=4" alt="Forest" style="width:100%">
+      <h4>Arif Gunduz</h2>
+        
+        </div>
+        <div style="width: 22%;" class="column">
+          <img  src="https://avatars2.githubusercontent.com/u/70724052?s=460&u=3bbbb24be569af3bde2181b73da327fc22842415&v=4" alt="Mountains" style="width:100%">
+      <h4>Enes Karpuz</h2>
+        
+        </div>
+        <div style="width: 22%;" class="column">
+          <img  src="https://avatars2.githubusercontent.com/u/56971277?s=460&u=5991a8d2c7cbceddd49959a3d47159f3994f9f2e&v=4" alt="Mountains" style="width:100%">
+      <h4>Ali Guzel</h2>
+      
+        
+      </div>
+        </div>
+      </div>
+      
+
+
     <!-- Contact section -->
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-      <h4 style="text-align: center;"><b>CONTACT</b></h4>
+    <div class="w3-container w3-blue-gray w3-padding-32 w3-padding-large" id="contact">
+      <h4 style="text-align: center;"><b>CONTACT </b></h4>
       <div class="w3-content" style="max-width:600px">
 
-        <p>Do you want to know the details ? fill out the form and contact us !</p>
+        <p>Fill in the form below for details !</p>
         <form action="/action_page.php" target="_blank">
           <div class="w3-section">
             <label>Name</label>
             <input class="w3-input w3-border" type="text" name="Name" required>
           </div>
           <div class="w3-section">
-            <label>Email</label>
+            <label>E-mail</label>
             <input class="w3-input w3-border" type="text" name="Email" required>
           </div>
           <div class="w3-section">
@@ -2052,43 +2191,51 @@
       </div>
     </div>
 
+
+
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-grey">
 
-      <div style="margin-left: 15%;" class="col-md-4">
-        <h4>İletişim Bilgileri (Contact Information)</h4>
+      <div style="margin-left: 15%; margin-top: 2%;" class="col-md-4">
+        <h4>Contact Information</h4>
         <ul class="address1">
-          <li><i class="fa fa-map-marker"></i>Hatay/Turkey</li>
-          <li><i class="fa fa-envelope"></i><a style="color:rgb(0, 0, 0);"
-              href="mailto:alihizmetci.1998@gmail.com">alihizmetci@gmail.com</a></li>
-          <li><i class="fab fa-github"></i></i> <a href="https://github.com/ali1903">Ali Hizmetci</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg> Ankara/Turkey</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+          </svg><a style="color:rgb(0, 0, 0); margin: 3px;"
+              href="mailto:cerebronew3@gmail.com">cerebronew3@gmail.com</a></li>
+              
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+          </svg><a style="margin: 3px ; color: #000;" href="http://cerebro.orgfree.com/">cerebro.orgfree.com</a></li>
 
         </ul>
+      
+    
       </div>
       <div class="w3-third">
-        <h3>POPULER ETİKETLER (Popular Tags)</h3>
+        <h3>Popular Tags</h3>
         <p>
           <span class="w3-tag w3-black w3-margin-bottom">Refugee</span> <span
-            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Circulation</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Circulation</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">diversity</span> <span
             class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Refugee-Circulation</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Refugee-Worldmap</span> <span
-            class="w3-tag w3-black w3-margin-bottom">Mülteci</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mülteci-Akımı</span> <span
-            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mülteci-Haritası</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Çeşitlilik</span> <span
-            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Irk</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Refugee-Worldmap</span> 
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">diversity</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">asylum</span>
         </p>
       </div>
   </div>
   </footer>
 
-  <div class="w3-black w3-center w3-padding-24"><span>@Ali Hizmetçi (eeloth)</span> </div>
+  <div style="opacity: 0.5 ;" class="w3-black w3-center w3-padding-24"><span>@Team Cerebrov</span> </div>
 
-  <!-- End page content -->
   </div>
 
   <script>
-    // Script to open and close sidebar
+
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
@@ -2098,10 +2245,6 @@
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
     }
-
-
-
-
 
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
@@ -2113,7 +2256,6 @@
       document.getElementById("myOverlay").style.display = "none";
     }
 
-    // Modal Image Gallery
     function onClick(element) {
       document.getElementById("img01").src = element.src;
       document.getElementById("modal01").style.display = "block";
